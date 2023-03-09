@@ -1,0 +1,55 @@
+---
+title: "0.Preface"
+author: "LiuYueR"
+date: "2023-03-09"
+output:
+  prettydoc::html_pretty:
+    theme: hpstr
+    highlight: github
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Graphics Cookbook, 2nd edition
+
+> 学习链接：https://r-graphics.org/
+
+**Welcome**
+
+欢迎使用**R Graphics Cookbook**，这是一本`R语言`绘图的实用指南，本书提供了 150 多个方法来帮助您快速生成高质量的图形，而无需梳理 R 绘图系统的所有细节。每个图形都解决了一个特定的问题，并提供了一个解决方案，您可以将其快速应用于自己的项目。
+
+## 0.1 Preface
+
+本书面向至少对 `R` 有基础的读者。本书中的绘图将向您展示如何执行特定任务。这本书尝试使用简单的示例，以便您可以理解它们的工作原理并将解决方案转移到您自己的问题上。
+
+## 0.2 Software and Platform Notes
+
+软件和平台说明
+
+这里的大部分方法都使用 `ggplot2` 进行绘图，以及用于数据整理的 `dplyr` 包。这些包都是`tidyverse`的一部分，它是 `R` 包的集合，可以更轻松地处理数据。这本书需要 `ggplot2的版本 > 3.0.0`，以及相对较新的 `R` 版本。您可以从 http://www.r-project.org 获取最新版本的`R`。
+
+在安装`R`后，就可以安装必要的`R`包了。
+
+除了`tidyverse`之外，还需要安装`gcookbook`包，它包含本书中许多示例的数据集。
+
+```
+install.packages("tidyverse")
+install.packages("gcookbook")
+```
+
+然后加载本书中经常会使用的包
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+> 在终端看见一些打印出来的信息，不用担心，这些消息是在加载R包之后，R的作用域里面多出了一些函数，这些函数和R已经加载的基础包中的函数名重叠了，因此R出示一些警告，这些函数在使用的时候需要稍加注意。
+
+
+
+
+
